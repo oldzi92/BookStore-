@@ -1,0 +1,52 @@
+/* Home.css */
+
+/* .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #87ceeb;
+} */
+
+.h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.butterfly-container {
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  height: 10%;
+}
+
+.butterfly {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3DP9Iel4mYocmrQ9JEd1f22zdgsbWu36arQ&usqp=CAU");
+  background-size: cover;
+  transition: transform 1s ease-in-out;
+  background-color: transparent;
+  text-align: right;
+}
+
+/* Animacja dodatkowa */
+@keyframes fly {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-60px) rotate(50deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.butterfly:hover {
+  animation: fly 1s infinite;
+}

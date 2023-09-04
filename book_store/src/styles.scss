@@ -1,0 +1,149 @@
+body {
+  text-align: center;
+  background-color: bisque;
+  width: 100%;
+  height: max-content;
+}
+
+nav {
+  position: relative;
+  margin-top: auto;
+  padding-left: 5px;
+  margin-left: 0;
+  background-color: white;
+  :active {
+    background-color: pink;
+  }
+}
+article {
+  position: relative;
+  display: block;
+  margin-top: 0px;
+  padding-left: 50px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  color: darkmagenta;
+}
+
+img {
+  height: 250px;
+  width: 400px;
+}
+
+@mixin naglowek($naglowek: rgb(246, 228, 231)) {
+  box-shadow: 10px 6px 5px rgba(gray, 0.8);
+  color: $naglowek;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  margin: 30px 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  @include naglowek;
+}
+
+.input {
+  text-align: right;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  background-color: aliceblue;
+}
+
+.root {
+  text-align: center;
+  background-color: bisque;
+  width: 100%;
+  height: 10px;
+}
+.quote-article {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  background-color: white;
+}
+
+.quote-container {
+  text-align: center;
+}
+
+.quote-image {
+  max-width: 300px;
+}
+
+.quote-text {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.banner {
+  background-image: url("https://polki.pl/foto/4_3_LARGE/100-ksiazek-polecanych-przez-internautow-307149.webp");
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.banner > p {
+  padding: 0px;
+}
+.cart {
+  padding-left: 40%;
+}
+.cartNavLink {
+  width: 40px;
+  height: 40px;
+}
+
+.loginNavLink {
+  padding-left: 30%;
+  display: flex;
+}
+
+// .photoForBook {
+//   text-align: center;
+//   width: 300px;
+//   height: 300px;
+//   display: block;
+// }
+
+button {
+  margin: auto;
+  text-align: center;
+  /*przeźroczystość przycisku*/
+  background: rgb(255, 111, 205);
+  /*dopełnienie ze wszystkich stron 25px;*/
+  padding: 25px;
+  /*obramowanie - szerokość 2px, linia ciągła, kolor biały*/
+  border: 2px solid #77bbec;
+  /*kolor czcionki*/
+  color: #054a78;
+  /*teraz dodamy efekt płynnego przejścia*/
+  font-variant: normal;
+  font-size: smaller;
+  transition: 0.7s;
+  width: 150px;
+  height: 50px;
+}
+
+/*możemy teraz opisać jak ma wyglądać przycisk po najechaniu na niego kursorem*/
+.button:hover {
+  /*tło - kolor biały*/
+  background: #77bbec;
+  /*czcionka w kolorze tła strony*/
+  color: #415967;
+  /*możemy również zmienić rodzaj kursora, np. na "łapkę"*/
+  cursor: cell;
+}
