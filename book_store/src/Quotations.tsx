@@ -52,11 +52,6 @@ export const Quotations = () => {
       </div>
       <br />
       {/* <div className="quote-text">
-        <i>
-          "Nie... nie wyjebie się, co ty..."
-          <br />
-          ~Mati
-        </i>
       </div> */}
       {/* <br />
       <div className="quote-text">
@@ -67,11 +62,7 @@ export const Quotations = () => {
         </i>
       </div>
       <div className="quote-text">
-        <i>
-          "Ja nie palę, ale jestem pierwszy za legalem"
-          <br />
-          ~Rafał
-        </i>
+   
       </div> */}
     </article>
   );
