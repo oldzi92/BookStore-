@@ -19,10 +19,10 @@ export type TPhotos = {
   url: string;
 };
 
-type TData = {
+interface TData {
   data: UserData;
   onSubmit: LogInProps;
-};
+}
 
 function App() {
   const location = useLocation();

@@ -1,17 +1,16 @@
 import { create } from "zustand";
 
-type TBook = {
+export type TBook = {
   bookTitle: string;
   bookId: number;
 };
 
-type BookStore = {
+export type BookStore = {
   Book: string;
   NewBook: string;
   id?: number;
   booksList: TBook[];
   checkoutItems: TBook[];
-  // bookId: number;
 
   setBooks: (book: string) => void;
   addBookToBooksList: (book: TBook) => void;
